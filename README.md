@@ -125,7 +125,7 @@ Open Safari it by going to URL on other network computer and go to the following
 To uninstall jenkins:
 
 First stop the jenkins server if it is running by running:
-`brew services stopt jenkins`
+`brew services stop jenkins`
 
 Using brew to uninstall Jenkins run the command: 
 `brew uninstall jenkins`
