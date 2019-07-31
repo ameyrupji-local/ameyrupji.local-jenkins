@@ -5,7 +5,7 @@ This repository outlines the steps to setup Jenkins reversed proxied through ngi
 ## Prerequisites 
 
 - HomeBrew installed (Installation instructions: https://www.howtogeek.com/211541/homebrew-for-os-x-easily-installs-desktop-apps-and-terminal-utilities/)
-- Nginx installed (Installation instructions: https://github.com/ameyrupji-local/ameyrupji.local-nginx-setup)
+- Nginx installed (Installation instructions: https://github.com/ameyrupji-local/ameyrupji.local-nginx)
 
 ## System Configuration at time of test
 
