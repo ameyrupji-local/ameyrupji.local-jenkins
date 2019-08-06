@@ -20,21 +20,40 @@ This page outlines the steps required to setup the GitHub.com connection to Jenk
 
 ### Generate GitHub.com personal access token
 
+In the upper-right corner of any page, click your profile photo, then click `Settings`.
 
+In the left sidebar, click `Developer settings`.
 ![github settings public profile](../images/github-settings-public-profile.png)
+
+In the left sidebar, click `Personal access tokens`.
 ![github settings apps](../images/github-settings-apps.png)
+
+Click `Generate new token`.
 ![github settings generate token](../images/github-settings-generate-token.png)
+
+Give your token a descriptive name. Select the scopes, or permissions, you'd like to grant this token. To use your token to access repositories from the command line, select `repo`. Click `Generate token`
 ![github settings generate token-page all](../images/github-settings-generate-token-page-all.png)
+
+Click to copy the token to your clipboard. For security reasons, after you navigate off the page, you will not be able to see the token again.
 ![github setting copy generated token](../images/github-setting-copy-generated-token.png)
 
-### Setup GitHub api plugin
+### Setup GitHub Api plugin
 
+Go to `Manage Jenkins` > `Configuration System`. Go to GitHub section a click on `Add GitHib Server`
 ![jenkins settings github add server](../images/jenkins-settings-github-add-server.png)
+
+Add a Name for the Server and then select `Add` in Credentials. Select Kind as `Secret text`
+![jenkins settings add credentials](../images/jenkins-settings-add-credentials.png)
+
+
+Click on Credentials `add`.  and add the generated token in the `Secrets` text box.
 ![jenkins settings add github credentials](../images/jenkins-settings-add-github-credentials.png)
 
+Select the added credentials and click on `Save`.
 
 ## Test 
 
+Hit the Test Connection button and you should see the message `Credentials verified for user ameyrupji, rate limit: xxxx`.
 
 ![jenkins settings test connection](../images/jenkins-settings-test-connection.png)
 
@@ -45,6 +64,4 @@ This page outlines the steps required to setup the GitHub.com connection to Jenk
 
 ## Useful Links
 
-- https://www.macminivault.com/installing-jenkins-on-macos/
-- https://mgrebenets.github.io/mobile%20ci/2015/02/01/jenkins-ci-server-on-osx
-- https://wiki.jenkins.io/display/JENKINS/Jenkins+behind+an+NGinX+reverse+proxy
+- https://help.github.com/en/articles/creating-a-personal-access-token-for-the-command-line
