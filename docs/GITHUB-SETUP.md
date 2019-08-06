@@ -1,4 +1,4 @@
-| [Home](./) ▸ **GitHub Setup** |
+| [Home](../) ▸ **GitHub Setup** |
 |-----|
 
 
