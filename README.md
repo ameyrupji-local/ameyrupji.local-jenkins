@@ -131,6 +131,11 @@ Using brew to uninstall Jenkins run the command:
 `brew uninstall jenkins`
 
 
+## Additional Setup
+
+- [GitHub API setup](docs/GITHUB-SETUP.md)
+
+
 ## Useful Links
 
 - https://www.macminivault.com/installing-jenkins-on-macos/
