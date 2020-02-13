@@ -133,7 +133,8 @@ Using brew to uninstall Jenkins run the command:
 
 ## Additional Setup
 
-- [GitHub API setup](docs/GITHUB-SETUP.md)
+- [GitHub API Setup](docs/GITHUB-SETUP.md)
+- [Simple Theme Setup](docs/SIMPLE-THEME-PLUGIN-SETUP.md)
 
 
 ## Useful Links
