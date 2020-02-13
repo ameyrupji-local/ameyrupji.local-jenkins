@@ -23,7 +23,7 @@ Please feel free to fork out this code make chanegs and create me a PR. Please a
 - https://plugins.jenkins.io/simple-theme-plugin/
 - https://jenkins.io/projects/blueocean/about/
 
-#### Themes
+#### Reference Themes
 
 - https://github.com/afonsof/jenkins-material-theme
 - https://jenkins-contrib-themes.github.io/jenkins-neo-theme/
