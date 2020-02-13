@@ -1,4 +1,4 @@
-| [Home](../README.md) ▸ **GitHub Setup** |
+| [Home](../README.md) ▸ **Jenkins Modern Theme Platform** |
 |-----|
 
 
