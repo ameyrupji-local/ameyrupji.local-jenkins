@@ -26,5 +26,5 @@ Please feel free to fork out this code make chanegs and create me a PR. Please a
 #### Reference Themes
 
 - https://github.com/afonsof/jenkins-material-theme
-- https://jenkins-contrib-themes.github.io/jenkins-neo-theme/
+- https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 - https://github.com/camalot/jenkins-dark-stylish 
