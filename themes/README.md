@@ -14,7 +14,7 @@ The aim of this theme is to make Jenkisn much more usable. No theme that I find 
 
 # Contribute
 
-Please feel free to fork out this code make chanegs and create me a PR. Please add adequite screenshots for me to look at and speedy recovery.
+Please feel free to fork out this code make chanegs and create me a PR. Please add adequite screenshots for me to look at and speedy approval.
 
 
 # Useful Links
