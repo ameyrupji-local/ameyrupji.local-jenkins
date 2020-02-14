@@ -7,4 +7,13 @@
   p, a, li {
     color: #fff; 
   }
+  
+  #jenkins .task-link {
+    text-transform: uppercase;
+    color: #ddd;
+  }
+  
+  #jenkins .task-link:hover {
+    color: #fff;
+  }
 }
