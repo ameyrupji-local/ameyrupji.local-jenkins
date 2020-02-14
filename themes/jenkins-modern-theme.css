@@ -1,4 +1,5 @@
-#header .login a {
+#header .login a, 
+#header .login a:visited {
   test-transfrom: uppercase;
 }
 
