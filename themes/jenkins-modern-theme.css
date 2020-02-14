@@ -25,4 +25,8 @@
     border: none
   }
   
+  #breadcrumbBar {
+    margin-left: 360px;
+  }
+  
 }
