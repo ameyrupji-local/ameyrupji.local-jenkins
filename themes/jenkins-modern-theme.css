@@ -3,8 +3,10 @@
   padding-top: 10px;
   background: transparent;
 }
-#breadcrumbBar ul#breadcrumbs {
+#breadcrumbBar .top-sticker-inner {
   background: transparent;
+}
+#breadcrumbBar ul#breadcrumbs {
   border-bottom: none;
 }
 
