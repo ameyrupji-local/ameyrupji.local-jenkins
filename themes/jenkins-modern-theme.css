@@ -58,7 +58,7 @@ footer {
   #breadcrumbs li,
   #breadcrumbs li a:link, 
   #breadcrumbs li a:visited {
-    color: #ddd;
+    color: #ddd !important;
   }
   
   
