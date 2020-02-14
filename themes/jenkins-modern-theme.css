@@ -1,6 +1,6 @@
 #header .login a, 
 #header .login a:visited {
-  test-transfrom: uppercase;
+  text-transform: uppercase;
 }
 
 #breadcrumbBar {
