@@ -61,5 +61,10 @@ footer {
     color: #ddd !important;
   }
   
+  #breadcrumbs li:hover, 
+  .breadcrumbBarAnchor.mouseIsOverMenuSelector {
+    background-color:transparent !important;
+    color: #fff;
+  }
   
 }
