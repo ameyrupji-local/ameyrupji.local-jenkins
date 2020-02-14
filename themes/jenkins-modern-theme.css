@@ -1,3 +1,16 @@
+#breadcrumbBar {
+  margin-left: 360px;
+  padding-top: 10px;
+}
+#side-panel {
+  position: relative;
+  top: -30px;
+}
+
+.tabBar .tab a { 
+    border: none
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background-color:rgba(22, 23, 25, 1);
@@ -21,12 +34,5 @@
     background-color: #000;
   }
   
-  .tabBar .tab a { 
-    border: none
-  }
-  
-  #breadcrumbBar {
-    margin-left: 360px;
-  }
   
 }
