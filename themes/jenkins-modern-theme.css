@@ -16,4 +16,8 @@
   #jenkins .task-link:hover {
     color: #fff;
   }
+  
+  .tabBar .tab.active {
+    background-color: #000;
+  }
 }
