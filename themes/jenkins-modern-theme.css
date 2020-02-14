@@ -1,10 +1,16 @@
 #breadcrumbBar {
   margin-left: 360px;
   padding-top: 10px;
+  background: transparent;
 }
+#breadcrumbBar ul#breadcrumbs {
+  background: transparent;
+  border-bottom: none;
+}
+
 #side-panel {
   position: relative;
-  top: -30px;
+  top: -40px;
 }
 
 .tabBar .tab a { 
