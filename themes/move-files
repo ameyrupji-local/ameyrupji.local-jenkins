@@ -2,7 +2,7 @@
 
 CSSFILE=$(find ./dist -type f -name 'src.*.css' | sed 's|^./dist/||')
 
-cp dist/src.*.css ./jenkis-modern-theme-platform.css 
+cp dist/src.*.css ./jenkis-modern-theme-platform.css
 cp dist/src.*.css.map ./jenkis-modern-theme-platform.css.map
 
 sed -i "" "s|$CSSFILE|jenkis-modern-theme-platform.css|g" jenkis-modern-theme-platform.css

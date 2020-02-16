@@ -1,0 +1,21 @@
+@import './variables.scss';
+
+footer {
+    a {
+        color: $anchor-color-light !important;
+        text-decoration: none !important;
+
+        :hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        a {
+            color: $anchor-color-dark !important;
+            text-decoration: none;
+        }
+    }
+}

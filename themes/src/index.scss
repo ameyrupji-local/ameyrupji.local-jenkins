@@ -1,1 +1,17 @@
-@import './header.scss'
+@import './site.scss';
+@import './site.color.scss';
+
+@import './header.scss';
+@import './header.color.scss';
+
+@import './breadcrumb.scss';
+@import './breadcrumb.color.scss';
+
+@import './side-panel.scss';
+@import './side-panel.color.scss';
+
+@import './main-panel.scss';
+@import './main-panel.color.scss';
+
+@import './footer.scss';
+@import './footer.color.scss';

@@ -1,0 +1,108 @@
+@import './variables';
+
+#main-panel {
+    .dashboard {
+        background-color: transparent;
+
+        #projectstatus-tabBar {
+            .tabBarFrame {
+                .tabBar {
+                    top: 0;
+                    & [type=radio]:checked ~ a {
+                        background-color: $background-color-light-alternate;
+                        border-radius: 0px;
+                    }
+
+                    a:hover {
+                        background-color: $background-color-light-alternate-1;
+                    }
+
+                    .tab {
+                        a {
+                            border: 0px;
+                            color: $font-color-light;
+                            border-radius: 0px;
+                        }
+                    }
+                }
+            }
+        }
+
+        #projectstatus tbody tr:first-child th:first-child,
+        #projectstatus tbody tr:first-child th:last-child  {
+            border-radius: 0;
+        }
+    }
+
+    .pane-frame {
+        border: 1px solid $background-color-light-alternate !important;
+        border-radius: 0px !important;
+
+        #projectstatus {
+            .header {
+                border: 0px;
+                border-radius: 0px;
+                th {
+                    background-color: $background-color-light-alternate !important;
+
+                    a {
+                        color: $font-color-light;
+                    }
+                }
+            }
+        }
+    }
+
+    .bottom-sticker-edge,
+    .bottom-sticker-inner {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #main-panel {
+        .dashboard {
+            background-color: transparent;
+
+            #projectstatus-tabBar {
+                .tabBarFrame {
+                    .tabBar {
+                        & [type=radio]:checked ~ a {
+                            background-color: $background-color-dark-alternate;
+                        }
+
+                        a:hover {
+                            background-color: $background-color-dark-alternate-1;
+                        }
+    
+                        .tab {
+                            a {
+                                color: $font-color-dark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .pane-frame {
+            border: 1px solid $background-color-dark-alternate;
+            border-radius: 0px;
+
+            #projectstatus {
+                .header {
+                    border: 0px;
+                    border-radius: 0px;
+                    th {
+                        background-color: $background-color-dark-alternate !important;
+
+                        a {
+                            color: $font-color-dark;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

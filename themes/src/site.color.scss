@@ -1,0 +1,55 @@
+@import './variables';
+
+body {
+    background-color: $background-color-light;
+}
+
+body, table, form, td, th, p {
+    color: $font-color-light; 
+}
+
+a {
+    &:visited,
+    &:link {
+        color: $anchor-color-light;
+    }
+
+}
+
+table.stripped-odd tr:nth-child(odd) {
+    background: $background-color-light-alternate-1;
+}
+
+table.stripped tr:hover, 
+table.stripped-even tr:hover, 
+table.stripped-odd tr:hover {
+    background: $background-color-light-alternate-2;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: $background-color-dark;
+    }
+    body, table, form, td, th, p {
+        color: $font-color-dark; 
+    }
+
+    a {
+        &:visited,
+        &:link {
+            color: $anchor-color-dark;
+        }
+    
+    }
+
+    table.stripped-odd tr:nth-child(odd) {
+        background: $background-color-dark-alternate-1;
+    }
+
+    table.stripped tr:hover, 
+    table.stripped-even tr:hover, 
+    table.stripped-odd tr:hover {
+        background: $background-color-dark-alternate-2 !important;
+    }
+     
+}

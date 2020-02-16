@@ -15,6 +15,7 @@
   },
   "scripts": {
     "dev": "parcel index.html --no-cache",
+    "prebuild": "rm -rf ./dist",
     "build": "parcel build index.html --no-cache --public-url ./",
     "postbuild": "chmod u+x move-files && ./move-files"
   }

@@ -1,4 +1,17 @@
-#header .login a, 
-#header .login a:visited {
-  text-transform: uppercase;
-}
+#header {
+  .login {
+    a, a:visited {
+      text-transform: uppercase;
+    }
+  }
+
+  #search-box {
+    height: 28px;
+    box-shadow: none;
+    padding-left: 25px;
+  }
+
+  .icon-help {
+    display: none;
+  }
+} 

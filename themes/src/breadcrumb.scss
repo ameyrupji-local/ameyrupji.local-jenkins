@@ -1,0 +1,20 @@
+#breadcrumbBar {
+    margin-left: 360px;
+    padding-top: 10px;
+    background: transparent;
+    
+    .top-sticker-inner {
+        background: transparent;
+    }
+    
+    ul#breadcrumbs {
+        border-bottom: none;
+
+        li,
+        li:hover,
+        li a,
+        li a:hover {
+            background-color: transparent !important;
+        }
+    }    
+}

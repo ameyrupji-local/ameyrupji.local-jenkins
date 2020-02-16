@@ -1,0 +1,13 @@
+#side-panel {
+    position: relative;
+    top: -40px;
+
+    #tasks .task-link {
+        text-transform: uppercase;
+
+        :hover,
+        :visited {
+            text-decoration: none !important;
+        }
+    }
+}
