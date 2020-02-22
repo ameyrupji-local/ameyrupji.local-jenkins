@@ -1,3 +1,8 @@
+.top-sticker {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+}
 #breadcrumbBar {
     margin-left: 360px;
     padding-top: 10px;
@@ -17,4 +22,15 @@
             background-color: transparent !important;
         }
     }    
+}
+
+
+.yui-skin-sam {
+    .yuimenu {
+        .bd {
+            a {
+                text-transform: uppercase;
+            }
+        }
+    }
 }

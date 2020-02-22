@@ -1,0 +1,60 @@
+@import './variables';
+
+#main-panel {
+    #add-item-panel {
+        form {
+            .footer {
+                .btn-decorator {
+                    button {
+                        background-color: $background-color-light-alternate;
+                        border-color: $background-color-light-alternate-2;
+                        color: $font-color-light;
+
+                        &:hover {
+                            background-color: $background-color-light-alternate-2;
+                        }
+
+                        &.disabled {
+                            background-color: $background-color-light-alternate-2;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #main-panel {
+        #add-item-panel {
+            form {
+                input {
+                    background-color: $background-color-dark-alternate;
+                    color: $font-color-dark;
+                    border-color: $background-color-dark-alternate-1;
+                }
+
+                .footer {
+                    .btn-decorator {
+                        button {
+                            background-color: $background-color-dark-alternate;
+                            border-color: $background-color-dark-alternate-2;
+                            color: $font-color-dark;
+    
+                            &:hover {
+                                background-color: $background-color-dark-alternate-2;
+                            }
+    
+                            &.disabled {
+                                background-color: $background-color-dark-alternate-2;
+                            }
+                        }
+    
+                    }
+                }
+            }
+        }
+    }
+}

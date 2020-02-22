@@ -1,47 +1,30 @@
 @import './variables';
 
 #main-panel {
-    .dashboard {
-        background-color: transparent;
+    background-color: transparent;
 
-        #projectstatus-tabBar {
-            .tabBarFrame {
-                .tabBar {
-                    top: 0;
-                    & [type=radio]:checked ~ a {
-                        background-color: $background-color-light-alternate;
-                        border-radius: 0px;
-                    }
+    .tabBarFrame {
+        .tabBar {
+            top: 0;
+            & [type=radio]:checked ~ a {
+                background-color: $background-color-light-alternate;
+            }
 
-                    a:hover {
-                        background-color: $background-color-light-alternate-1;
-                    }
+            a:hover {
+                background-color: $background-color-light-alternate-1;
+            }
 
-                    .tab {
-                        a {
-                            border: 0px;
-                            color: $font-color-light;
-                            border-radius: 0px;
-                        }
-                    }
+            .tab {
+                a {
+                    color: $font-color-light;
                 }
             }
-        }
-
-        #projectstatus tbody tr:first-child th:first-child,
-        #projectstatus tbody tr:first-child th:last-child  {
-            border-radius: 0;
         }
     }
 
     .pane-frame {
-        border: 1px solid $background-color-light-alternate !important;
-        border-radius: 0px !important;
-
         #projectstatus {
             .header {
-                border: 0px;
-                border-radius: 0px;
                 th {
                     background-color: $background-color-light-alternate !important;
 
@@ -50,6 +33,26 @@
                     }
                 }
             }
+        }
+    }
+
+    .bigtable {
+        border: 1px solid $background-color-light-alternate;
+
+        th {
+            background-color: $background-color-light-alternate;
+        }
+
+        tr {
+            border: 0;
+        }
+
+        tr:nth-child(odd) {
+            background-color: $background-color-light-alternate-1;
+        }
+
+        tr:hover {
+            background-color: $background-color-light-alternate-2;
         }
     }
 
@@ -62,38 +65,29 @@
 
 @media (prefers-color-scheme: dark) {
     #main-panel {
-        .dashboard {
-            background-color: transparent;
+        background-color: transparent;
 
-            #projectstatus-tabBar {
-                .tabBarFrame {
-                    .tabBar {
-                        & [type=radio]:checked ~ a {
-                            background-color: $background-color-dark-alternate;
-                        }
+        .tabBarFrame {
+            .tabBar {
+                & [type=radio]:checked ~ a {
+                    background-color: $background-color-dark-alternate;
+                }
 
-                        a:hover {
-                            background-color: $background-color-dark-alternate-1;
-                        }
-    
-                        .tab {
-                            a {
-                                color: $font-color-dark;
-                            }
-                        }
+                a:hover {
+                    background-color: $background-color-dark-alternate-1;
+                }
+
+                .tab {
+                    a {
+                        color: $font-color-dark;
                     }
                 }
             }
         }
 
         .pane-frame {
-            border: 1px solid $background-color-dark-alternate;
-            border-radius: 0px;
-
             #projectstatus {
                 .header {
-                    border: 0px;
-                    border-radius: 0px;
                     th {
                         background-color: $background-color-dark-alternate !important;
 
@@ -102,6 +96,30 @@
                         }
                     }
                 }
+            }
+        }
+
+        .bigtable {
+            border: 1px solid $background-color-dark-alternate !important;
+    
+            th {
+                background-color: $background-color-dark-alternate;
+
+                a {
+                    color: $font-color-dark;
+                }
+            }
+
+            tr {
+                border: 0;
+            }
+
+            tr:nth-child(odd) {
+                background-color: $background-color-dark-alternate-1;
+            }
+
+            tr:hover {
+                background-color: $background-color-dark-alternate-2;
             }
         }
     }

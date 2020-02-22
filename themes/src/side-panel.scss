@@ -2,12 +2,19 @@
     position: relative;
     top: -40px;
 
-    #tasks .task-link {
-        text-transform: uppercase;
+    #tasks {
+        .task-link {
+            text-transform: uppercase;
 
-        :hover,
-        :visited {
-            text-decoration: none !important;
+            :hover,
+            :visited {
+                text-decoration: none !important;
+            }
+        }
+
+        .subtasks {
+            padding-left: 2em;
+            margin-top: 4px;
         }
     }
 }

@@ -1,16 +1,60 @@
+@import './variables.scss';
+
+.yui-skin-sam {
+    // .yuimenuitem-hassubmenu {
+    //     background-image: ;
+    // }
+    .yuimenuitem-selected {
+        background-color: $background-color-light-alternate-1;
+    }
+    .yuimenu {
+        .bd {
+            box-shadow: none !important;
+            border-color: $background-color-light-alternate !important;
+
+            background-color: $background-color-light;
+            color: $font-color-light;
+            
+            a {
+                color: $font-color-light;
+            }
+        }
+    }
+}
+
 @media (prefers-color-scheme: dark) {
 
     #breadcrumbs li,
     #breadcrumbs li a:link, 
     #breadcrumbs li a:visited {
-        color: #ddd !important;
+        color: $font-color-dark !important;
     }
 
     #breadcrumbs li:hover, 
     .breadcrumbBarAnchor.mouseIsOverMenuSelector {
         background-color:transparent !important;
-        color: #fff;
+        color: $font-color-dark;
     }
 
+    .yui-skin-sam {
+        // .yuimenuitem-hassubmenu {
+        //     background-image: ;
+        // }
+        .yuimenuitem-selected {
+            background-color: $background-color-dark-alternate-1;
+        }
+        .yuimenu {
+            .bd {
+                box-shadow: none !important;
+                border-color: $background-color-dark-alternate !important;
     
+                background-color: $background-color-dark;
+                color: $font-color-dark;
+                
+                a {
+                    color: $font-color-dark;
+                }
+            }
+        }
+    }
 }

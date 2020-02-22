@@ -30,8 +30,8 @@ table.stripped-odd tr:hover {
     body {
         background-color: $background-color-dark;
     }
-    body, table, form, td, th, p {
-        color: $font-color-dark; 
+    body, table, form, td, th, p, label {
+        color: $font-color-dark !important; 
     }
 
     a {

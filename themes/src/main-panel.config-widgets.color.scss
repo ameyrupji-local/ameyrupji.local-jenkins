@@ -1,0 +1,68 @@
+@import './variables';
+
+#main-panel {
+    .jenkins-config-widgets{
+        background-color: $background-color-light;
+        border-left: 1px solid $background-color-light;
+        border-right: 1px solid $background-color-light;
+        border-bottom: 1px solid $background-color-light-alternate;
+
+        .form-config.tabBarFrame {
+            border-bottom: 0;
+        }
+
+        .tabBar {
+            .tab {
+                color: $font-color-light;
+                background-color: transparent;
+
+                &.active {
+                    background-color: $background-color-light-alternate;
+                }
+                
+                &:hover {
+                    background-color: $background-color-light-alternate-1;
+                }
+            }
+        }
+    }
+
+    .jenkins-config {
+        border-color: $background-color-light-alternate;
+
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    #main-panel {
+        .jenkins-config-widgets{
+            background-color: $background-color-dark;
+            border-left: 1px solid $background-color-dark;
+            border-right: 1px solid $background-color-dark;
+            border-bottom: 1px solid $background-color-dark-alternate;
+            
+            .form-config.tabBarFrame {
+                border-bottom: 0;
+            }
+
+            .tabBar {
+                .tab {
+                    color: $font-color-dark;
+                    background-color: transparent;
+    
+                    &.active {
+                        background-color: $background-color-dark-alternate;
+                    }
+                    
+                    &:hover {
+                        background-color: $background-color-dark-alternate-1;
+                    }
+                }
+            }
+        }
+    
+        .jenkins-config {
+            border-color: $background-color-dark-alternate;
+        }
+    }
+}

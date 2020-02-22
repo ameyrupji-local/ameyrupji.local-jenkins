@@ -2,19 +2,33 @@
 |-----|
 
 
-# Jenkins Modern Theme Platform
+# [WIP] Jenkins Modern Theme Platform
 
-The aim of this theme is to make Jenkisn much more usable. No theme that I find online has tried to address all the functionality as mentioned below. The primary features that I want to enable in this modern theme are:
+**This theme is Work in Progress.**
 
-- Dark Mode Supprt 
+The aim of this theme is to make Jenkins much more usable. No theme that I find online has tried to address all the functionality as mentioned below. The primary features that I want to enable in this modern theme are:
+
+- Dark Mode Support 
 - Cleanup and use of modern icons 
-- General theme improvents and close to [Blue Ocean](https://jenkins.io/projects/blueocean/about/)
+- General theme improvements and close to [Blue Ocean](https://jenkins.io/projects/blueocean/about/)
 
-**Note:** Though Blue Ocean is a good UI theme for most os the usecases it lacks the abiility to show useful packages like the promotion package, etc
+**Note:** Though Blue Ocean is a good UI theme for most os the use cases it lacks the ability to show useful packages like the promotion package, etc
+
+# Editing theme 
+
+```
+npm run dev
+```
+
+# Building theme 
+
+```
+npm run build
+```
 
 # Contribute
 
-Please feel free to fork out this code make chanegs and create me a PR. Please add adequite screenshots for me to look at and speedy approval.
+Please feel free to fork out this code make changes and create me a PR. Please add adequate screenshots for me to look at and speedy approval.
 
 
 # Useful Links

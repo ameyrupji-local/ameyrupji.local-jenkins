@@ -1,0 +1,46 @@
+@import './_variables.scss';
+
+#main-panel {
+    .jenkins-config-widgets{
+        border: none;
+        top: 0 !important;
+        border-radius: 0;
+
+        .tabBar {
+            .tab {
+                border: 0px;
+                border-radius: 0;
+            }
+        }
+    }
+
+    .jenkins-config {
+        background-color: transparent;
+        
+        > .header,
+        .categories, 
+        .item-copy,
+        .footer {
+            background-color: transparent !important;
+            border: 0px;
+        }
+
+        .config_buttons td > div:nth-child(1) {
+            height: 0 !important;
+        }
+        
+        #bottom-sticker {
+            position: relative !important; 
+            left: 0px !important;
+            bottom: 0px !important;
+        }
+        .bottom-sticker-inner {
+            border: 0;
+            background: transparent !important;
+            border: none !important;
+            
+        }
+        
+    }
+}
+

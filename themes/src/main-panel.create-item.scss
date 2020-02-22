@@ -1,0 +1,37 @@
+#main-panel {
+    #add-item-panel {
+        form {
+            > .header,
+            .categories, 
+            .item-copy,
+            .footer {
+                background-color: transparent !important;
+                border: 0px;
+            }
+
+            .j-item-options {
+                li {
+                    &:hover,
+                    &:focus {
+                        background: transparent !important;
+                    }
+                }
+
+                li.active {
+                    background: transparent !important;
+                    box-shadow: none;
+                }
+
+            }
+
+            .footer {
+                .btn-decorator {
+                    border: 0;
+                    background: transparent;
+                    position: relative !important; 
+                }
+            }
+        }
+    }
+}
+

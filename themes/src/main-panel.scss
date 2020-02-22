@@ -1,3 +1,43 @@
 #main-panel {
-    
+    background-color: transparent;
+
+    .tabBarFrame {
+        .tabBar {
+            top: 0;
+            & [type=radio]:checked ~ a {
+                border-radius: 0px;
+            }
+
+            .tab {
+                a {
+                    border: 0px;
+                    border-radius: 0px;
+                }
+            }
+        }
+    }
+
+    #projectstatus tbody tr:first-child th:first-child,
+    #projectstatus tbody tr:first-child th:last-child  {
+        border-radius: 0;
+    }
+
+    .pane-frame {
+        border-width: 0px !important;
+        border-style: solid;
+        border-radius: 0px !important;
+
+        #projectstatus {
+            .header {
+                border: 0px;
+                border-radius: 0px;
+            }
+        }
+    }
+
+    .bottom-sticker-edge,
+    .bottom-sticker-inner {
+        background-color: transparent;
+        background-image: none;
+    }
 }
