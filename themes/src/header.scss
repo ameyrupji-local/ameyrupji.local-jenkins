@@ -1,5 +1,23 @@
 #header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+
+  .logo {
+    margin-left: 0;
+    width: 360px;
+    padding: 0 15px;
+
+    #jenkins-name-icon {
+      bottom: 0px;
+      left: 40px;
+    }
+  }
+
   .login {
+
+
     a, a:visited {
       text-transform: uppercase;
     }

@@ -28,19 +28,18 @@
         .config_buttons td > div:nth-child(1) {
             height: 0 !important;
         }
-        
-        #bottom-sticker {
-            position: relative !important; 
-            left: 0px !important;
-            bottom: 0px !important;
-        }
+    }
+
+    #bottom-sticker {
+        position: relative !important; 
+        left: 0px !important;
+        bottom: 0px !important;
+
         .bottom-sticker-inner {
             border: 0;
             background: transparent !important;
-            border: none !important;
-            
+            border: none !important; 
         }
-        
     }
 }
 

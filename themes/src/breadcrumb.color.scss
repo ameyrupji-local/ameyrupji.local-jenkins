@@ -1,9 +1,11 @@
 @import './variables.scss';
 
+#breadcrumbs {
+    background-color: $background-color-light;
+    border-bottom: 1px solid $background-color-light-alternate !important;
+}
+
 .yui-skin-sam {
-    // .yuimenuitem-hassubmenu {
-    //     background-image: ;
-    // }
     .yuimenuitem-selected {
         background-color: $background-color-light-alternate-1;
     }
@@ -23,6 +25,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+    #breadcrumbs {
+        background-color: $background-color-dark;
+        border-bottom: 1px solid $background-color-dark-alternate !important;
+    }
 
     #breadcrumbs li,
     #breadcrumbs li a:link, 

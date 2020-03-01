@@ -1,0 +1,94 @@
+@import './variables.scss';
+
+#resizeContainer { border-color: $background-color-light-alternate !important;}
+.timeline-ether-lines{border-color:#666;}
+.timeline-ether-weekends{ background-color:#000 !important;}
+.timeline-highlight-decorator{background-color:#FFC080;}
+.timeline-highlight-point-decorator{background-color:#ff5;}
+.timeline-highlight-label {color:#999; }
+
+.timeline-date-label { border: solid #fff; color: $font-color-light !important; }
+.timeline-date-label-em {color: #000;}
+.timeline-ether-highlight {background-color: $background-color-light-alternate-1!important; opacity: 1 !important;}
+
+.timeline-event-icon, 
+.timeline-event-label,
+.timeline-event-tape {
+    color: $accent-color-light !important;
+}
+
+.timeline-event-icon {
+    background-color: $accent-color-light;
+}
+
+.timeline-band-0 .timeline-ether-bg{background-color:$background-color-light-alternate !important;}
+.timeline-band-1 .timeline-ether-bg{background-color:$background-color-light-alternate-1 !important }
+.timeline-band-2 .timeline-ether-bg{background-color:#ccc}
+.timeline-band-3 .timeline-ether-bg{background-color:#aaa}
+
+.timeline-event-tape,
+.timeline-small-event-tape,
+.timeline-small-event-icon,
+.timeline-duration-event,
+.timeline-instant-event2 {
+    border-left: 1px solid $accent-color-light !important;
+    background-color: $accent-color-light !important;
+}
+
+.timeline-event-bubble-title {
+    border-bottom: 1px solid #888;
+}
+.timeline-event-bubble-wiki {
+    color:      #A0A040;
+}
+.timeline-event-bubble-wiki a {
+    color:      #A0A040;
+}
+
+.timeline-event-bubble-time {
+    color: #aaa;
+}
+
+.timeline-band {
+    background: #000;
+}
+
+.yui-skin-sam .yui-resize .yui-resize-handle {
+    background-color: $background-color-light-alternate !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    #resizeContainer {border-color: $background-color-dark-alternate !important;}
+    .timeline-band-0 .timeline-ether-bg{background-color:$background-color-dark-alternate !important;}
+    .timeline-band-1 .timeline-ether-bg{background-color:$background-color-dark-alternate-1 !important }
+    .timeline-ether-highlight {background-color: $background-color-dark-alternate-1!important; opacity: 1 !important;}
+
+    .timeline-date-label {
+        border: solid #fff;
+        color: #fff !important;
+        font-weight: bold;
+    }
+
+    .timeline-event-tape,
+    .timeline-small-event-tape,
+    .timeline-small-event-icon,
+    .timeline-duration-event,
+    .timeline-instant-event2 {
+        border-left: 1px solid $accent-color-dark !important;
+        background-color: $accent-color-dark !important;
+    }
+
+    .timeline-event-icon, 
+    .timeline-event-label,
+    .timeline-event-tape {
+        color: $accent-color-dark !important;
+    }
+
+    .timeline-event-icon {
+        background-color: $accent-color-dark ;
+    }
+
+    .yui-skin-sam .yui-resize .yui-resize-handle {
+        background-color: $background-color-dark-alternate !important;
+    }
+}

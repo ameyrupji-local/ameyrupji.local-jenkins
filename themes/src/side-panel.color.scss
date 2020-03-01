@@ -1,6 +1,7 @@
 @import './variables';
 
 #side-panel {
+    background-color: $background-color-light-alternate-1;
     .task-link {
         color: $font-color-light;
         
@@ -10,12 +11,21 @@
         }
     }
 
+    #tasks {
+        .task {
+            &:hover {
+                background-color: $background-color-light;
+            }
+        }
+    }
+
+
     .pane-frame {
-        border: solid 1px $background-color-light-alternate;
+        // border: solid 1px $background-color-light-alternate;
         border-radius: 0;
         &.mouseover,
         &:hover {
-            border: solid 1px $background-color-light-alternate;
+            // border: solid 1px $background-color-light-alternate;
         }
 
         .pane-footer,
@@ -27,13 +37,14 @@
             color: $font-color-light;
         }
     }
-    .pane td {
+    td.pane {
         color: $font-color-light;
     }
 }
 
 @media (prefers-color-scheme: dark) {
     #side-panel {
+        background-color: $background-color-dark-alternate-1;
         .task-link {
             color: $font-color-dark;
             
@@ -43,12 +54,20 @@
             }
         }
 
+        #tasks {
+            .task {
+                &:hover {
+                    background-color: $background-color-dark;
+                }
+            }
+        }
+
         .pane-frame {
-            border: solid 1px $background-color-dark-alternate;
+            // border: solid 1px $background-color-dark-alternate;
             border-radius: 0;
             &.mouseover,
             &:hover {
-                border: solid 1px $background-color-dark-alternate;
+                // border: solid 1px $background-color-dark-alternate;
             }
     
             .pane-footer,
@@ -60,7 +79,7 @@
                 color: $font-color-dark;
             }
         }
-        .pane td {
+        td.pane {
             color: $font-color-dark;
         }
     }

@@ -61,6 +61,16 @@
         background-color: transparent;
         background-image: none;
     }
+
+    .manage-option {
+        dd {
+            color: $font-color-light;
+        }
+
+        &:hover {
+            background: transparent;
+        }
+    }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -120,6 +130,23 @@
 
             tr:hover {
                 background-color: $background-color-dark-alternate-2;
+            }
+        }
+
+        .setting-input,
+        input {
+            background-color: $background-color-dark-alternate;
+            color: $font-color-dark;
+            border-color: $background-color-dark-alternate-1;
+        }
+
+        .manage-option {
+            dd {
+                color: $font-color-dark;
+            }
+    
+            &:hover {
+                background: transparent;
             }
         }
     }

@@ -1,20 +1,60 @@
 #side-panel {
-    position: relative;
-    top: -40px;
+    position: fixed;
+    top: 40px;
+    min-height: 100%;
+    padding: 0;
 
     #tasks {
-        .task-link {
-            text-transform: uppercase;
+        width: 360px;
+        margin: 15px 0 0 0;
 
-            :hover,
-            :visited {
-                text-decoration: none !important;
+        .task {
+            margin: 0 !important;
+            padding: 5px 15px;
+            max-width: 100%;
+
+            .task-link {
+                text-transform: uppercase;
+
+                &:hover,
+                &:visited {
+                    text-decoration: none !important;
+                }
             }
-        }
 
+        }
         .subtasks {
-            padding-left: 2em;
             margin-top: 4px;
         }
     }
+
+    .pane-frame {
+        margin: 15px 0 0 0;
+        border: 0;
+
+        &:hover {
+            border: 0;
+        }
+
+        .row {
+            .pane-header {
+                padding: 10px 15px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .pane-content {
+            .pane {
+                padding: 10px 15px;
+            }
+
+            .cell {
+                padding: 10px 30px;
+            }
+        }
+    }
+ 
 }
