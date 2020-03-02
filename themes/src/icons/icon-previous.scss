@@ -1,0 +1,98 @@
+// @import './variables';
+$icon-color-light: green;
+$icon-color-dark: green;
+
+$previous-path: 'M6,6H8V18H6M9.5,12L18,18V6M16,14.14L12.97,12L16,9.86V14.14Z';
+$previous-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $previous-path +"' /%3E%3C/svg%3E");
+$previous-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $previous-path +"' /%3E%3C/svg%3E");
+
+
+.icon-previous {
+    &.icon-xlg {
+        content: $previous-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &.icon-lg {
+        content: $previous-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-md {
+        content: $previous-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-sm {
+        content: $previous-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+img[src$="previous.png"] {
+    &[width="48"], &[src*="/48x48/"] {
+        content: $previous-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &[width="32"], &[src*="/32x32/"] {
+        content: $previous-image-light;
+        content: $previous-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="24"], &[src*="/24x24/"] {
+        content: $previous-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="16"], &[src*="/16x16/"] {
+        content: $previous-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    img.icon-hourglass {
+        content: $previous-image-dark;
+    }
+    .icon-previous {
+        &.icon-xlg {
+            content: $previous-image-dark;
+        }
+        &.icon-lg {
+            content: $previous-image-dark;
+        }
+        &.icon-md {
+            content: $previous-image-dark;
+        }
+        &.icon-sm {
+            content: $previous-image-dark;
+        }
+    }
+    img[src$="setting.png"] {
+        &[width="48"], &[src*="/48x48/"] {
+            content: $previous-image-dark;
+        }
+        &[width="32"], &[src*="/32x32/"] {
+            content: $previous-image-dark;
+        }
+        &[width="24"], &[src*="/24x24/"] {
+            content: $previous-image-dark;
+        }
+        &[width="16"], &[src*="/16x16/"] {
+            content: $previous-image-dark;
+        }
+    }
+
+}

@@ -1,0 +1,96 @@
+@import './variables';
+
+$notepad-path: 'M8,12H16V14H8V12M10,20H6V4H13V9H18V12.1L20,10.1V8L14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H10V20M8,18H12.1L13,17.1V16H8V18M20.2,13C20.3,13 20.5,13.1 20.6,13.2L21.9,14.5C22.1,14.7 22.1,15.1 21.9,15.3L20.9,16.3L18.8,14.2L19.8,13.2C19.9,13.1 20,13 20.2,13M20.2,16.9L14.1,23H12V20.9L18.1,14.8L20.2,16.9Z';
+$notepad-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $notepad-path +"' /%3E%3C/svg%3E");
+$notepad-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $notepad-path +"' /%3E%3C/svg%3E");
+
+
+.icon-notepad {
+    &.icon-xlg {
+        content: $notepad-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &.icon-lg {
+        content: $notepad-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-md {
+        content: $notepad-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-sm {
+        content: $notepad-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+img[src$="notepad.png"] {
+    &[width="48"], &[src*="/48x48/"] {
+        content: $notepad-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &[width="32"], &[src*="/32x32/"] {
+        content: $notepad-image-light;
+        content: $notepad-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="24"], &[src*="/24x24/"] {
+        content: $notepad-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="16"], &[src*="/16x16/"] {
+        content: $notepad-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    img.icon-hourglass {
+        content: $notepad-image-dark;
+    }
+    .icon-notepad {
+        &.icon-xlg {
+            content: $notepad-image-dark;
+        }
+        &.icon-lg {
+            content: $notepad-image-dark;
+        }
+        &.icon-md {
+            content: $notepad-image-dark;
+        }
+        &.icon-sm {
+            content: $notepad-image-dark;
+        }
+    }
+    img[src$="notepad.png"] {
+        &[width="48"], &[src*="/48x48/"] {
+            content: $notepad-image-dark;
+        }
+        &[width="32"], &[src*="/32x32/"] {
+            content: $notepad-image-dark;
+        }
+        &[width="24"], &[src*="/24x24/"] {
+            content: $notepad-image-dark;
+        }
+        &[width="16"], &[src*="/16x16/"] {
+            content: $notepad-image-dark;
+        }
+    }
+
+}

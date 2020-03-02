@@ -22,6 +22,16 @@
                     box-shadow: none;
                 }
 
+                .icon {
+                    background: transparent;
+                    border: none;
+
+                    &:before {
+                        background: transparent;
+                        border: none;
+                    }
+                }
+
             }
 
             .footer {
@@ -31,6 +41,7 @@
                     position: relative !important; 
                 }
             }
+
         }
     }
 }

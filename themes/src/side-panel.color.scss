@@ -33,9 +33,25 @@
         .pane-header a {
             background-color: $background-color-light-alternate;
             border-radius: 0px !important;
-            border-bottom: none;
+            border: none;
             color: $font-color-light;
         }
+        .pane-content {
+            .pane {
+                padding: 10px 15px;
+
+                &.build-name a, 
+                &.build-name a:visited {
+                    color: $font-color-light;
+                }
+
+                &.build-details a, 
+                &.build-details a:visited {
+                    color: $font-color-light;
+                }
+            }
+        }
+
     }
     td.pane {
         color: $font-color-light;
@@ -77,6 +93,22 @@
                 border-radius: 0px !important;
                 border-bottom: none;
                 color: $font-color-dark;
+            }
+
+            .pane-content {
+                .pane {
+                    padding: 10px 15px;
+    
+                    &.build-name a, 
+                    &.build-name a:visited {
+                        color: $font-color-dark;
+                    }
+    
+                    &.build-details a, 
+                    &.build-details a:visited {
+                        color: $font-color-dark;
+                    }
+                }
             }
         }
         td.pane {

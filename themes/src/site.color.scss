@@ -16,8 +16,13 @@ a {
 
 }
 
-table.stripped-odd tr:nth-child(odd) {
-    background: $background-color-light-alternate-1;
+table.stripped-odd tr:nth-child(odd),
+table.stripped tr:nth-child(odd) {
+    background: $background-color-light-alternate;
+}
+
+table.stripped tr:nth-child(even) {
+    background: transparent !important;
 }
 
 table.stripped tr:hover, 
@@ -42,8 +47,13 @@ table.stripped-odd tr:hover {
     
     }
 
-    table.stripped-odd tr:nth-child(odd) {
-        background: $background-color-dark-alternate-1;
+    table.stripped-odd tr:nth-child(odd),
+    table.stripped tr:nth-child(odd) {
+        background: $background-color-dark-alternate;
+    }
+
+    table.stripped tr:nth-child(even) {
+        background: transparent !important;
     }
 
     table.stripped tr:hover, 

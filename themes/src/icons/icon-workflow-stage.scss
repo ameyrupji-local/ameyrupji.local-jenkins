@@ -1,0 +1,97 @@
+@import './variables';
+
+$workflow-stage-path: 'M3,3H21V5H3V3M3,7H21V9H3V7M3,11H21V13H3V11M3,15H21V17H3V15M3,19H21V21H3V19Z';
+$workflow-stage-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $workflow-stage-path +"' /%3E%3C/svg%3E");
+$workflow-stage-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $workflow-stage-path +"' /%3E%3C/svg%3E");
+
+
+.icon-workflow-stage {
+    background-image: none !important;
+    &.icon-xlg {
+        content: $workflow-stage-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &.icon-lg {
+        content: $workflow-stage-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-md {
+        content: $workflow-stage-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-sm {
+        content: $workflow-stage-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+img[src$="workflow-stage.png"] {
+    &[width="48"], &[src*="/48x48/"] {
+        content: $workflow-stage-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &[width="32"], &[src*="/32x32/"] {
+        content: $workflow-stage-image-light;
+        content: $workflow-stage-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="24"], &[src*="/24x24/"] {
+        content: $workflow-stage-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="16"], &[src*="/16x16/"] {
+        content: $workflow-stage-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    img.icon-hourglass {
+        content: $workflow-stage-image-dark;
+    }
+    .icon-workflow-stage {
+        &.icon-xlg {
+            content: $workflow-stage-image-dark;
+        }
+        &.icon-lg {
+            content: $workflow-stage-image-dark;
+        }
+        &.icon-md {
+            content: $workflow-stage-image-dark;
+        }
+        &.icon-sm {
+            content: $workflow-stage-image-dark;
+        }
+    }
+    img[src$="workflow-stage.png"] {
+        &[width="48"], &[src*="/48x48/"] {
+            content: $workflow-stage-image-dark;
+        }
+        &[width="32"], &[src*="/32x32/"] {
+            content: $workflow-stage-image-dark;
+        }
+        &[width="24"], &[src*="/24x24/"] {
+            content: $workflow-stage-image-dark;
+        }
+        &[width="16"], &[src*="/16x16/"] {
+            content: $workflow-stage-image-dark;
+        }
+    }
+
+}

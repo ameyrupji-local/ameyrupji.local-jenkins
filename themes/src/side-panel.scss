@@ -49,6 +49,16 @@
         .pane-content {
             .pane {
                 padding: 10px 15px;
+
+                &.build-name a, 
+                &.build-name a:visited {
+                    text-decoration: none;
+                }
+
+                &.build-details a, 
+                &.build-details a:visited {
+                    text-decoration: none;
+                }
             }
 
             .cell {

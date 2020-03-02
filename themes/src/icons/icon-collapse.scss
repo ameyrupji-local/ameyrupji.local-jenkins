@@ -1,0 +1,95 @@
+@import './variables';
+$collapse-path: 'M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z';
+$collapse-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $collapse-path +"' /%3E%3C/svg%3E");
+$collapse-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $collapse-path +"' /%3E%3C/svg%3E");
+
+
+.icon-collapse {
+    &.icon-xlg {
+        content: $collapse-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &.icon-lg {
+        content: $collapse-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-md {
+        content: $collapse-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-sm {
+        content: $collapse-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+img[src$="collapse.png"] {
+    &[width="48"], &[src*="/48x48/"] {
+        content: $collapse-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &[width="32"], &[src*="/32x32/"] {
+        content: $collapse-image-light;
+        content: $collapse-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="24"], &[src*="/24x24/"] {
+        content: $collapse-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="16"], &[src*="/16x16/"] {
+        content: $collapse-image-light;
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    img.icon-hourglass {
+        content: $collapse-image-dark;
+    }
+    .icon-collapse {
+        &.icon-xlg {
+            content: $collapse-image-dark;
+        }
+        &.icon-lg {
+            content: $collapse-image-dark;
+        }
+        &.icon-md {
+            content: $collapse-image-dark;
+        }
+        &.icon-sm {
+            content: $collapse-image-dark;
+        }
+    }
+    img[src$="collapse.png"] {
+        &[width="48"], &[src*="/48x48/"] {
+            content: $collapse-image-dark;
+        }
+        &[width="32"], &[src*="/32x32/"] {
+            content: $collapse-image-dark;
+        }
+        &[width="24"], &[src*="/24x24/"] {
+            content: $collapse-image-dark;
+        }
+        &[width="16"], &[src*="/16x16/"] {
+            content: $collapse-image-dark;
+        }
+    }
+
+}
