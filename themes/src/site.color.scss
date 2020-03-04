@@ -31,6 +31,14 @@ table.stripped-odd tr:hover {
     background: $background-color-light-alternate-2;
 }
 
+table.sortable span.sortarrow {
+    color: $font-color-light;
+}
+
+#menuSelector {
+    color: $font-color-light !important;
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: $background-color-dark;
@@ -60,6 +68,14 @@ table.stripped-odd tr:hover {
     table.stripped-even tr:hover, 
     table.stripped-odd tr:hover {
         background: $background-color-dark-alternate-2 !important;
+    }
+
+    table.sortable span.sortarrow {
+        color: $font-color-dark;
+    }
+
+    #menuSelector {
+        color: $font-color-dark !important;
     }
      
 }

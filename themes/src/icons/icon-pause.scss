@@ -1,58 +1,58 @@
 @import './variables';
 
-$document-path: 'M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z';
-$document-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $document-path +"' /%3E%3C/svg%3E");
-$document-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $document-path +"' /%3E%3C/svg%3E");
+$pause-path: 'M14,19H18V5H14M6,19H10V5H6V19Z';
+$pause-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+ $pause-path +"' /%3E%3C/svg%3E");
+$pause-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+ $pause-path +"' /%3E%3C/svg%3E");
 
 
-.icon-document {
+.icon-pause {
     &.icon-xlg {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(.9);
         -ms-transform: scale(.9);
         -webkit-transform: scale(.9);
     }
     &.icon-lg {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(.8);
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
     }
     &.icon-md {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(.8);
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
     }
     &.icon-sm {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(1);
         -ms-transform: scale(1);
         -webkit-transform: scale(1);
     }
 }
-img[src$="document.png"] {
+img[src$="pause.png"] {
     &[width="48"], &[src*="/48x48/"] {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(.9);
         -ms-transform: scale(.9);
         -webkit-transform: scale(.9);
     }
     &[width="32"], &[src*="/32x32/"] {
-        content: $document-image-light;
-        content: $document-image-light;
+        content: $pause-image-light;
+        content: $pause-image-light;
         transform: scale(.8);
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
     }
     &[width="24"], &[src*="/24x24/"] {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(.8);
         -ms-transform: scale(.8);
         -webkit-transform: scale(.8);
     }
     &[width="16"], &[src*="/16x16/"] {
-        content: $document-image-light;
+        content: $pause-image-light;
         transform: scale(1);
         -ms-transform: scale(1);
         -webkit-transform: scale(1);
@@ -62,34 +62,34 @@ img[src$="document.png"] {
 @media (prefers-color-scheme: dark) {
 
     img.icon-hourglass {
-        content: $document-image-dark;
+        content: $pause-image-dark;
     }
-    .icon-document {
+    .icon-pause {
         &.icon-xlg {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &.icon-lg {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &.icon-md {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &.icon-sm {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
     }
-    img[src$="document.png"] {
+    img[src$="pause.png"] {
         &[width="48"], &[src*="/48x48/"] {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &[width="32"], &[src*="/32x32/"] {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &[width="24"], &[src*="/24x24/"] {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
         &[width="16"], &[src*="/16x16/"] {
-            content: $document-image-dark;
+            content: $pause-image-dark;
         }
     }
 

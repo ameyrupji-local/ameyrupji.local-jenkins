@@ -32,6 +32,8 @@ $new-package-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org
     }
 }
 img[src$="new-package.png"] {
+    background-image: none !important;
+    content: $new-package-image-light;
     &[width="48"], &[src*="/48x48/"] {
         content: $new-package-image-light;
         transform: scale(.9);

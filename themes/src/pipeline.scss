@@ -1,0 +1,118 @@
+@import './_variables.scss';
+
+#pipeline-box {
+
+    .table-box {
+        overflow: scroll;
+
+        tr td {
+            border: 0px !important;
+        }
+        .table-viewPort {
+            box-shadow: none !important;
+            border: 0px !important;
+        }
+
+        tr.header th {
+            border: 0px !important;
+            border-bottom: 0px !important;
+            padding: 5px 0 !important;
+
+            &.stage-start {
+                background: $background-color-light !important;
+                min-height: 70px !important;
+            }
+        }
+
+        .table-viewPort {
+            tr.totals {
+                .cell-color {
+                    background-color: $background-color-light-alternate !important;
+                    box-shadow: none !important;
+                    color: $font-color-light !important;
+                    .duration {
+                        text-shadow: none;
+                    }
+                }
+                .stage-start {
+                    background: $background-color-light !important;
+                    margin: 0;
+
+                    .cell-color {
+                        background-color: $background-color-light-alternate !important;
+                        color: $font-color-light !important;
+                        box-shadow: none;
+                        text-shadow: none;
+                        z-index:10;
+                        margin: 0 0 0 !important;
+                    }
+                }
+            }
+        }
+    }
+
+    .tobsTable-body {
+        .job.FAILURE,
+        .job.SUCCESS,
+        .job.NOT_EXECUTED {
+            .stage-start {
+                background-color: $background-color-light;
+                z-index:10;
+
+                .jobName .badge {
+                    background-color: red;
+                    text-shadow: none;
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        .job.SUCCESS {
+            .stage-start {
+                .jobName .badge {
+                    background-color: green;
+                }
+            }
+        }
+
+        .job.FAILURE {
+            .stage-start {
+                .jobName .badge {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+
+.cbwf-dialog {
+    border-radius: 0px !important;
+    background-color: $background-color-light !important;
+    border: 0px !important;
+    padding: 30px 0 20px;
+
+    .header {
+        background-color: $background-color-light !important;
+        text-transform: uppercase;
+        font-size: 2em !important;
+    }
+
+    .body {
+        .node-name {
+            background-color: $background-color-light !important;
+        }
+
+        .cbwf-stage-logs .log-details {
+            background-color: $background-color-light !important;
+
+            .console-output {
+                background: repeating-linear-gradient(transparent, transparent 20px, rgba(0, 0, 0, 0.05) 20px, rgba(0, 0, 0, 0.05) 40px);
+            }
+        }
+    }
+
+    
+}
+

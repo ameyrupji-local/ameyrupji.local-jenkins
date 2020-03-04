@@ -80,7 +80,7 @@ img[src$="previous.png"] {
             content: $previous-image-dark;
         }
     }
-    img[src$="setting.png"] {
+    img[src$="previous.png"] {
         &[width="48"], &[src*="/48x48/"] {
             content: $previous-image-dark;
         }

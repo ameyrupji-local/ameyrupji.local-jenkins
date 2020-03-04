@@ -28,7 +28,11 @@
             // border: solid 1px $background-color-light-alternate;
         }
 
-        .pane-footer,
+        .pane-footer{
+            background-color: transparent;
+            border: none;
+        }
+
         .pane-header,
         .pane-header a {
             background-color: $background-color-light-alternate;
@@ -38,8 +42,6 @@
         }
         .pane-content {
             .pane {
-                padding: 10px 15px;
-
                 &.build-name a, 
                 &.build-name a:visited {
                     color: $font-color-light;
@@ -86,7 +88,9 @@
                 // border: solid 1px $background-color-dark-alternate;
             }
     
-            .pane-footer,
+            .pane-footer{
+                background-color: transparent;
+            }
             .pane-header,
             .pane-header a {
                 background-color: $background-color-dark-alternate;
@@ -97,8 +101,6 @@
 
             .pane-content {
                 .pane {
-                    padding: 10px 15px;
-    
                     &.build-name a, 
                     &.build-name a:visited {
                         color: $font-color-dark;
