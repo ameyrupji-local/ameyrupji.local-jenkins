@@ -41,6 +41,10 @@ $nobuild-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/200
     }
 }
 img[src$="nobuilt_anime.gif"] {
+    opacity: 0;     
+    animation: opacityOn 3s normal forwards;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
     &[width="48"], &[src*="/48x48/"] {
         content: $nobuild-image-light;
         transform: scale(.9);

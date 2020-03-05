@@ -1,0 +1,100 @@
+$icon-color-light: green;
+$icon-color-dark: green;
+
+$clock-anime-path: 'M8,5.14V19.14L19,12.14L8,5.14Z';
+$clock-anime-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='4 4 16 16'%3E%3Cpath fill='"+ $icon-color-light +"' d='"+$clock-anime-path+"' /%3E%3C/svg%3E");
+$clock-anime-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='4 4 16 16'%3E%3Cpath fill='"+ $icon-color-dark +"' d='"+$clock-anime-path+"' /%3E%3C/svg%3E");
+
+
+.icon-clock-anime {
+    opacity: 0;     
+    animation: opacityOn 3s normal forwards;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    &.icon-xlg {
+        content: $clock-anime-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &.icon-lg {
+        content: $clock-anime-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &.icon-md {
+        content: $clock-anime-image-light;
+        transform: scale(.7);
+        -ms-transform: scale(.7);
+        -webkit-transform: scale(.7);
+    }
+    &.icon-sm {
+        content: $clock-anime-image-light;
+    }
+}
+img[src$="clock-anime.gif"] {
+    opacity: 0;     
+    animation: opacityOn 3s normal forwards;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    &[width="48"], &[src*="/48x48/"] {
+        content: $clock-anime-image-light;
+        transform: scale(.9);
+        -ms-transform: scale(.9);
+        -webkit-transform: scale(.9);
+    }
+    &[width="32"], &[src*="/32x32/"] {
+        content: $clock-anime-image-light;
+        transform: scale(.8);
+        -ms-transform: scale(.8);
+        -webkit-transform: scale(.8);
+    }
+    &[width="24"], &[src*="/24x24/"] {
+        content: $clock-anime-image-light;
+        transform: scale(.7);
+        -ms-transform: scale(.7);
+        -webkit-transform: scale(.7);
+    }
+    &[width="16"], &[src*="/16x16/"] {
+        content: $clock-anime-image-light;
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+
+    img.icon-hourglass {
+        content: $clock-anime-image-dark;
+    }
+
+    .icon-clock-anime-anime,
+    .icon-clock-anime {
+        &.icon-xlg {
+            content: $clock-anime-image-dark;
+        }
+        &.icon-lg {
+            content: $clock-anime-image-dark;
+        }
+        &.icon-md {
+            content: $clock-anime-image-dark;
+        }
+        &.icon-sm {
+            content: $clock-anime-image-dark;
+        }
+    }
+    img[src$="clock-anime.gif"] {
+        &[width="48"], &[src*="/48x48/"] {
+            content: $clock-anime-image-dark;
+        }
+        &[width="32"], &[src*="/32x32/"] {
+            content: $clock-anime-image-dark;
+        }
+        &[width="24"], &[src*="/24x24/"] {
+            content: $clock-anime-image-dark;
+        }
+        &[width="16"], &[src*="/16x16/"] {
+            content: $clock-anime-image-dark;
+        }
+    }
+}

@@ -1,5 +1,21 @@
 @import './_variables.scss';
 
+
+$blue-icon-color-light: green;
+$blue-icon-color-dark: green;
+
+$blue-path: 'M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M10 17L5 12L6.41 10.59L10 14.17L17.59 6.58L19 8L10 17Z';
+$blue-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $blue-icon-color-light +"' d='"+ $blue-path +"' /%3E%3C/svg%3E");
+$blue-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $blue-icon-color-dark +"' d='"+ $blue-path +"' /%3E%3C/svg%3E");
+
+$red-icon-color-light: red;
+$red-icon-color-dark: red;
+
+$red-path: 'M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z';
+$red-image-light: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $red-icon-color-light +"' d='"+ $red-path +"' /%3E%3C/svg%3E");
+$red-image-dark: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' style='width:16px;height:16px' viewBox='0 0 24 24'%3E%3Cpath fill='"+ $red-icon-color-dark +"' d='"+ $red-path +"' /%3E%3C/svg%3E");
+
+
 #pipeline-box {
 
     .table-box {
@@ -23,7 +39,6 @@
                 min-height: 70px !important;
             }
         }
-
         .table-viewPort {
             tr.totals {
                 .cell-color {
@@ -36,7 +51,7 @@
                 }
                 .stage-start {
                     background: $background-color-light !important;
-                    margin: 0;
+                    margin: 0 !important;
 
                     .cell-color {
                         background-color: $background-color-light-alternate !important;
@@ -48,11 +63,18 @@
                     }
                 }
             }
+            .stage-wrapper {
+                min-width: 5em !important;
+                min-height: 5em !important;
+                position: relative;
+                top: -2em;
+
+            }
         }
     }
 
     .tobsTable-body {
-        .job.FAILURE,
+        .job.FAILED,
         .job.SUCCESS,
         .job.NOT_EXECUTED {
             .stage-start {
@@ -60,26 +82,103 @@
                 z-index:10;
 
                 .jobName .badge {
-                    background-color: red;
+                    background-color: gray;
                     text-shadow: none;
                     a {
                         text-decoration: none;
                     }
                 }
             }
+            .stage-cell {
+                border: 0;
+                text-shadow: none;
+                min-width: 7em;
+                .cell-color {
+                    margin: 0 auto;
+                    overflow: visible;
+                    width: 25px;
+                    min-height: 10px;
+                    height: 25px;
+                    border-radius: 50%;
+                    
+                    &:hover {
+                        width: 35px;
+                        height: 35px;
+                        border: 5px solid gray;
+                    }
+
+                    .stage-wrapper {
+                        border: 0;
+                        margin: 0 auto;
+                        
+                        .duration {
+                            box-shadow: none;
+                            position: relative;
+                            white-space: nowrap;
+                            top: 5px;
+                            text-align: left;
+                            left: -0.5em;
+                            padding: 0;
+                            margin: 0 auto;
+                        }
+                        &:hover {
+                           box-shadow: none; 
+                        }
+                    }
+                }
+
+            }
         }
+        
         .job.SUCCESS {
             .stage-start {
                 .jobName .badge {
                     background-color: green;
                 }
             }
+            .stage-cell {
+                .cell-color {
+                    &:before {
+                        content: $blue-image-light;
+                    }
+                }
+            }
         }
 
-        .job.FAILURE {
+        .job.NOT_EXECUTED,
+        .job.FAILED {
             .stage-start {
                 .jobName .badge {
                     background-color: red;
+                }
+            }
+            .stage-cell {
+                &.FAILED {
+                    .cell-color {
+                        &:before {
+                            content: $red-image-light;
+                        }
+                    }
+                    .stage-wrapper {
+                        box-shadow: none !important;
+
+                        .duration {
+                            background: none;
+
+                            
+                        }
+                        .status {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.SUCCESS {
+                    .cell-color {
+                        &:before {
+                            content: $blue-image-light;
+                        }
+                    }
                 }
             }
         }
@@ -100,15 +199,48 @@
     }
 
     .body {
-        .node-name {
-            background-color: $background-color-light !important;
-        }
+        
+        .node-log-frame{
 
-        .cbwf-stage-logs .log-details {
-            background-color: $background-color-light !important;
+            .node-name {
+                padding: 0px;
+                border: 1px solid gray;
+                border-radius: 0;
+                .log-link {
+                    text-decoration: none;
+                }
+                .glyphicon {
+                    background-color: gray;
+                    padding: 7px 3px;
+                    color: white
+                }
+            }
+            &.SUCCESS {
+                .node-name {
+                    background-color: $background-color-light !important;
 
-            .console-output {
-                background: repeating-linear-gradient(transparent, transparent 20px, rgba(0, 0, 0, 0.05) 20px, rgba(0, 0, 0, 0.05) 40px);
+                    .glyphicon{
+                        background-color: green;
+                    }
+                }
+            }
+
+            &.FAILED {
+                .node-name {
+                    background-color: $background-color-light !important;
+
+                    .glyphicon{
+                        background-color: red;
+                    }
+                }
+            }
+
+            .cbwf-stage-logs .log-details {
+                background-color: $background-color-light !important;
+
+                .console-output {
+                    background: repeating-linear-gradient(transparent, transparent 20px, rgba(0, 0, 0, 0.05) 20px, rgba(0, 0, 0, 0.05) 40px);
+                }
             }
         }
     }
@@ -116,3 +248,49 @@
     
 }
 
+.alert {
+    
+
+    .caption {
+        text-shadow: none;
+        color: white;
+    }
+
+    .btn-toolbar .btn-group {
+        margin: 10px 0 0 0  !important;
+
+        .btn.stage-logs {
+            min-width: 100% !important;
+        }
+    }
+
+    &:before {
+        border-right: 10px solid transparent !important;
+        border-left: 10px solid transparent !important;
+        bottom: -18px !important;
+        left: 0 !important;
+
+    }
+
+
+    &.alert-success {
+        background-color: green !important;
+        border-color:green !important;
+
+        &:before {
+            border-top: 10px solid green !important;
+        }
+
+        
+
+    }
+
+    &.alert-danger {
+        background-color: red !important;
+        border-color:red !important;
+        &:before {
+            border-top: 10px solid red !important;
+        }
+
+    }
+}

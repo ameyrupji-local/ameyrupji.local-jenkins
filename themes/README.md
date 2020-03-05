@@ -36,9 +36,12 @@ Please feel free to fork out this code make changes and create me a PR. Please a
 #### Plugins
 - https://plugins.jenkins.io/simple-theme-plugin/
 - https://jenkins.io/projects/blueocean/about/
+- 
 
 #### Reference Themes
 
 - https://github.com/afonsof/jenkins-material-theme
 - https://github.com/jenkins-contrib-themes/jenkins-neo-theme
 - https://github.com/camalot/jenkins-dark-stylish 
+
+- https://anseki.github.io/leader-line/

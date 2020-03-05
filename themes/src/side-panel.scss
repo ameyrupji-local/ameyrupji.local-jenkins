@@ -47,6 +47,12 @@
             }
         }
 
+        .pane-footer{
+            a {
+                text-decoration: none;
+            }
+        }
+
         .pane-content {
             .pane {
                 padding: 5px 10px !important;
@@ -95,8 +101,6 @@
             .cell {
                 padding: 10px 30px;
             }
-
-
         }
     }
  
