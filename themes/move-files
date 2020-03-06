@@ -1,9 +1,18 @@
 #!/bin/bash
 
-CSSFILE=$(find ./dist -type f -name 'src.*.css' | sed 's|^./dist/||')
+CSSFILE=$(find ./dist -type f -name 'scss.*.css' | sed 's|^./dist/||')
 
-cp dist/src.*.css ./jenkis-modern-theme-platform.css
-cp dist/src.*.css.map ./jenkis-modern-theme-platform.css.map
+cp dist/scss.*.css ./jenkis-modern-theme-platform.css
+cp dist/scss.*.css.map ./jenkis-modern-theme-platform.css.map
 
-sed -i "" "s|$CSSFILE|jenkis-modern-theme-platform.css|g" jenkis-modern-theme-platform.css
-sed -i "" "s|$CSSFILE|jenkis-modern-theme-platform.css|g" jenkis-modern-theme-platform.css.map
+sed -i "" "s|$CSSFILE|jenkins-modern-theme-platform.css|g" jenkis-modern-theme-platform.css
+sed -i "" "s|$CSSFILE|jenkins-modern-theme-platform.css|g" jenkis-modern-theme-platform.css.map
+
+
+JSFILE=$(find ./dist -type f -name 'js.*.js' | sed 's|^./dist/||')
+
+cp dist/js.*.js ./jenkis-modern-theme-platform.js
+cp dist/js.*.js.map ./jenkis-modern-theme-platform.js.map
+
+sed -i "" "s|$CSSFILE|jenkins-modern-theme-platform.js|g" jenkis-modern-theme-platform.js
+sed -i "" "s|$CSSFILE|jenkins-modern-theme-platform.js|g" jenkis-modern-theme-platform.js.map
