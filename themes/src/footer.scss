@@ -1,7 +1,17 @@
 @import './variables.scss';
 
 footer {
-    background-color: transparent;
     border: none;
+    padding: 0;
+    
+    #footer {
+        width: 360px !important;
+        padding: 11px 0;
+        height: 40px !important;
+    }
+
+    .col-md-18 {
+        padding: 11px 0;
+    }
 }
   

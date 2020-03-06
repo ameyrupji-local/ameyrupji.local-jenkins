@@ -1,6 +1,7 @@
-#main-panel {
-    background-color: transparent;
+@import './variables';
 
+#main-panel {
+    min-height: 95vh;
 
     .tabBarFrame {
         .tabBar {

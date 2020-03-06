@@ -1,6 +1,11 @@
 @import './variables.scss';
 
 footer {
+    background-color: $background-color-light;
+
+    #footer {
+        background-color: $background-color-light-alternate-1;
+    }
     a {
         color: $anchor-color-light !important;
         text-decoration: none !important;
@@ -13,6 +18,12 @@ footer {
 
 @media (prefers-color-scheme: dark) {
     footer {
+        background-color: $background-color-dark;
+        
+        #footer {
+            background-color: $background-color-dark-alternate-1;
+        }
+
         a {
             color: $anchor-color-dark !important;
             text-decoration: none;
